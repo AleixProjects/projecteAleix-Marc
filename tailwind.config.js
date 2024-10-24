@@ -9,6 +9,9 @@ module.exports = {
       taronjaFosc: "#bc6c25",
       taronjaClar: "#dda15e",
     },
+    fontFamily: {
+      ubuntu: "Ubuntu",
+    },
   },
   plugins: [],
 };

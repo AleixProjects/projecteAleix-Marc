@@ -3,27 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../public/style/style.css"/>
+    <link rel="stylesheet" href="../public/style/style.css" />
     <title>Login Page</title>
   </head>
-  <body class="bg-beix">
-    <div class="flex flex-col justify-center">
+  <body class="bg-beix h-screen font-ubuntu">
+    <header class="flex justify-center p-4">
       <img
-        class="w-48 h-autobg-beix"
+        class="w-48 h-autobg-beix mt-20"
         src="../public/icons/logo-606C38.png"
         alt="Envelope Icon"
       />
-      <input type="text" placeholder="Username" />
-      <input type="password" placeholder="Password" />
-      <div>
-        <input type="checkbox" id="remember" />
-        <label for="remember">Don't remember password?</label>
-      </div>
-      <button>Log In</button>
-      <div>Not signed yet? <a href="#">Register here!</a></div>
-      <div>
-        <img src="google-logo.png" alt="Google Logo" />
-        <span>Or login with Google</span>
+    </header>
+    <div class="flex flex-col flex-grow mt-16">
+      <div class="ml-20 mr-20">
+        <form class="w-full max-w-sm">
+          <div class="mb-4">
+            <label
+              class="block text-sm font-bold mb-2 text-verdFosc"
+              for="name"
+            >
+              Username
+            </label>
+            <input
+              class="bg-beix appearance-none border rounded-lg w-full py-2 px-3 bg-transparent leading-tight focus:outline-none focus:ring-2 focus:ring-green-400 text-verdFosc"
+              id="name"
+              type="text"
+            />
+          </div>
+          <div>
+            <label
+              class="block text-verdFosc text-sm font-bold mb-2"
+              for="password"
+            >
+              Password
+            </label>
+            <input
+              class="bg-beix appearance-none border rounded-lg w-full py-2 px-3 text-verdFosc bg-transparent leading-tight focus:outline-none focus:ring-2 focus:ring-green-400"
+              id="password"
+              type="password"
+            />
+          </div>
+        </form>
+        <div class="mt-0.5 text-verdFosc text-xs font-bold">
+          <label for="remember">Don't remember password?</label>
+        </div>
+        <div
+          class="w-full flex flex-row flex-nowrap items-center mt-4 text-verdFosc"
+        >
+          <a
+            class="w-56 h-8 bg-taronjaFosc text-beix text-xs font-bold p-2 justify-center rounded-lg flex"
+            href="./mainPage.html"
+          >
+            Log In
+          </a>
+          <label class="text-xs w-full ml-4 font-bold text-ellipsis">
+            Not signed yet? <a href="./register.html">Register here!</a>
+          </label>
+        </div>
+        <hr class="justify-self-center w-36 mt-10 leading-3 text-verdFosc" />
+        <div class="flex flex-col flex-nowrap items-center mt-4 text-xs">
+          <span class="mb-3 text-verdFosc">Or login with:</span>
+
+          <div class="bg-beix rounded-xl p-3 drop-shadow-2xl">
+            <a
+              href="https://www.youtube.com/watch?v=hl3Nvq8lZ5Q&pp=ygUOeGF2aSBqYXJkaW5lcm8%3D"
+            >
+              <img
+                class="w-10 h-auto"
+                src="../public/icons/google-icon.png"
+                alt="Envelope Icon"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
