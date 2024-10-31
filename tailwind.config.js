@@ -8,6 +8,7 @@ module.exports = {
       verdFosc: "#283618",
       taronjaFosc: "#bc6c25",
       taronjaClar: "#dda15e",
+      vermell: "#B00020"
     },
     fontFamily: {
       ubuntu: "Ubuntu",

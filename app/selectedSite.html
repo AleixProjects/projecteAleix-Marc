@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link rel="stylesheet" href="/public/style/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="font-ubuntu bg-cover bg-no-repeat relative"
+    style="background-image: url('../public/bg/map.png')"
+    id="body"
+  >
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 opacity-50 z-0" id="bgBlack"></div>
+    <a
+      href="./login.html"
+      class="flex justify-center items-center fixed top-96 left-44 bg-vermell rounded-full w-8 h-8 z-10"
+    >
+      <img src="../public/icons/pin-map.png" class="w-6 h-6" />
+    </a>
+
+    <div class="h-screen grid grid-cols-1 content-start relative z-10">
+      <header
+        class="grid grid-cols-4 h-14 mt-10 content-center justify-items-center"
+      >
+        <a href="./profile.html">
+          <img
+            src="../public/icons/shrek.png"
+            class="border rounded-full w-12 h-12"
+            id="myImgProfile"
+          />
+        </a>
+
+        <textarea
+          rows="1"
+          class="min-w-72 flex bg-verdClar col-span-3 rounded-full items-center text-beix p-3 placeholder-beix focus:border-beix relative z-20"
+          style="resize: none"
+          placeholder="Search for site"
+          id="myTextarea"
+        ></textarea>
+      </header>
+      <footer class="mt-10 ">
+        <div
+          class="relative w-full h-screen bg-beix rounded-t-3xl flex flex-row justify-center border border-verdClar"
+        >
+            <div class="flex flex-col items-center">
+                <hr class="bg-verdClar mt-3 w-40 h-1.5">
+                <div>
+                    <h1>Crta. Barcelona, 39-37</h1>
+                    <p>42.192769503009075, 2.193246171025068</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                        <path d="M15 27.125L13.1875 25.4458C11.0833 23.4868 9.34375 21.7969 7.96875 20.376C6.59375 18.9552 5.5 17.6851 4.6875 16.5656C3.875 15.4246 3.30208 14.3806 2.96875 13.4333C2.65625 12.4861 2.5 11.5174 2.5 10.5271C2.5 8.50347 3.15625 6.81354 4.46875 5.45729C5.78125 4.10104 7.41667 3.42291 9.375 3.42291C10.4583 3.42291 11.4896 3.65972 12.4688 4.13333C13.4479 4.60694 14.2917 5.2743 15 6.13541C15.7083 5.2743 16.5521 4.60694 17.5313 4.13333C18.5104 3.65972 19.5417 3.42291 20.625 3.42291C22.5833 3.42291 24.2188 4.10104 25.5313 5.45729C26.8438 6.81354 27.5 8.50347 27.5 10.5271C27.5 11.5174 27.3333 12.4861 27 13.4333C26.6875 14.3806 26.125 15.4246 25.3125 16.5656C24.5 17.6851 23.4063 18.9552 22.0313 20.376C20.6563 21.7969 18.9167 23.4868 16.8125 25.4458L15 27.125ZM15 23.6375C17 21.7861 18.6458 20.2038 19.9375 18.8906C21.2292 17.5559 22.25 16.4042 23 15.4354C23.75 14.4451 24.2708 13.5733 24.5625 12.8198C24.8542 12.0448 25 11.2806 25 10.5271C25 9.23541 24.5833 8.15902 23.75 7.29791C22.9167 6.4368 21.875 6.00625 20.625 6.00625C19.6458 6.00625 18.7396 6.29687 17.9063 6.87812C17.0729 7.43784 16.5 8.15902 16.1875 9.04166H13.8125C13.5 8.15902 12.9271 7.43784 12.0938 6.87812C11.2604 6.29687 10.3542 6.00625 9.375 6.00625C8.125 6.00625 7.08333 6.4368 6.25 7.29791C5.41667 8.15902 5 9.23541 5 10.5271C5 11.2806 5.14583 12.0448 5.4375 12.8198C5.72917 13.5733 6.25 14.4451 7 15.4354C7.75 16.4042 8.77083 17.5559 10.0625 18.8906C11.3542 20.2038 13 21.7861 15 23.6375Z" fill="#1D1B20"/>
+                      </svg>
+                    <div class="relative w-full h-screen overflow-hidden">
+                    <!-- Carousel Items -->
+                        <div class="carousel-item active bg-cover bg-center h-full" style="background-image: url('https://via.placeholder.com/1920x1080?text=Background+1');"></div>
+                        <div class="carousel-item bg-cover bg-center h-full" style="background-image: url('https://via.placeholder.com/1920x1080?text=Background+2');"></div>
+                        <div class="carousel-item bg-cover bg-center h-full" style="background-image: url('https://via.placeholder.com/1920x1080?text=Background+3');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const textarea = document.getElementById("myTextarea");
+      const imgProfile = document.getElementById("myImgProfile");
+      const bg = document.getElementById("bgBlack");
+      textarea.addEventListener("focus", function () {
+        textarea.classList.remove("bg-verdClar");
+        textarea.classList.remove("text-beix");
+        textarea.classList.add("bg-beix");
+        textarea.classList.add("text-verdFosc");
+        textarea.classList.add("h-16");
+        textarea.classList.add("pt-5");
+        imgProfile.classList.add("w-10");
+        imgProfile.classList.add("h-10");
+        imgProfile.classList.add("m-3");
+        bg.classList.add("bg-black");
+      });
+      textarea.addEventListener("blur", function () {
+        textarea.classList.add("border");
+        textarea.classList.add("border-verdClar");
+        bg.classList.remove("bg-black");
+      });
+    </script>
+
+    <script>
+        const items = document.querySelectorAll('.carousel-item');
+        let currentItem = 0;
+
+        function showNextItem() {
+        items[currentItem].classList.remove('active');
+        currentItem = (currentItem + 1) % items.length;
+        items[currentItem].classList.add('active');
+        }
+
+        setInterval(showNextItem, 3000); // Change image every 3 seconds
+    </script>
+  </body>
+</html>
