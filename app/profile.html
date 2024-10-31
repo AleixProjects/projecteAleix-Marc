@@ -28,24 +28,29 @@
 			</a>
 
 			<!-- Icon in the Center -->
-			<div><img src="../public/icons/logo-606C38.png" class="w-14" /></div>
+			<div>
+				<img
+					src="../public/icons/logo-606C38.png"
+					class="w-10 sm:w-12 md:w-14"
+				/>
+			</div>
 
 			<!-- Placeholder for right side (optional) -->
 			<div></div>
 		</header>
 
 		<!-- Form Container -->
-
-		<div>
-			<div class="flex mb-4 space-x-6 mt-20 ml-10 items-center">
-				<img src="../public/icons/shrek.png" class="w-32 h-32 rounded-full" />
-				<h1 class="align-center text-3xl font-black">Hi, Marc!</h1>
+		<div class="flex flex-col items-center">
+			<div class="flex mb-4 space-x-6 mt-20 md:mt-20 items-center">
+				<img
+					src="../public/icons/shrek.png"
+					class="w-32 h-32 md:w-32 md:h-32 rounded-full"
+				/>
+				<h1 class="text-2xl md:text-3xl font-black">Hi, Marc!</h1>
 			</div>
-		</div>
 
-		<div>
 			<div
-				class="grid justify-center items-center mt-20 font-bold text-center gap-5 text-xl"
+				class="grid justify-center items-center mt-20 font-bold text-center gap-3 md:gap-5 text-lg md:text-xl"
 			>
 				<a href="./editProfile.html"><p>Profile</p></a>
 				<p>My Votes</p>
@@ -53,14 +58,16 @@
 			</div>
 		</div>
 
-		<div class="flex justify-center items-center">
-			<div class="w-fit h-fit rounded-full bg-verdClar mt-40">
+		<div class="flex justify-center items-center mt-40 md:mt-24">
+			<a
+				class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-verdClar flex justify-center items-center"
+				href="./mainPage.html"
+			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					width="50"
-					height="50"
 					viewBox="0 0 51 51"
 					fill="none"
+					class="w-32 h-32"
 				>
 					<path
 						fill-rule="evenodd"
@@ -69,7 +76,7 @@
 						fill="white"
 					/>
 				</svg>
-			</div>
+			</a>
 		</div>
 	</body>
 </html>
