@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Configuration</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="/public/style/style.css" />
+	</head>
+	<body class="bg-beix font-ubuntu p-4">
+		<div class="max-w-md mx-auto">
+			<!-- Header -->
+			<header class="text-center mt-4 mb-8">
+				<h1 class="text-3xl font-black text-verdFosc">Configuration</h1>
+			</header>
+
+			<!-- Your Residence Section -->
+			<section class="mb-8">
+				<h2 class="font-bold text-lg text-verdFosc mb-2">Your Residence</h2>
+				<input
+					type="text"
+					value="Ripoll, 17500"
+					class="w-full p-2 border border-gray-400 rounded-md"
+					readonly
+				/>
+			</section>
+
+			<!-- Notifications Section -->
+			<section class="mb-8 flex gap-3">
+				<h2 class="font-bold text-lg text-verdFosc mb-2 mt-3">Notifications</h2>
+				<button class="bg-verdFosc text-white px-4 py-2 rounded-full">
+					On
+				</button>
+			</section>
+
+			<!-- Privacy Section -->
+			<section class="mb-8">
+				<h2 class="font-bold text-lg text-verdFosc mb-4">Privacitat</h2>
+
+				<!-- Private Profile Toggle -->
+				<div class="flex items-center justify-between mb-4 w-32 text-center">
+					<label class="text-md font-medium mr-4">Private Profile</label>
+					<div class="relative">
+						<input type="checkbox" class="hidden" checked />
+						<div
+							class="toggle-track w-12 h-6 bg-gray-300 rounded-full shadow-inner"
+						></div>
+						<div
+							class="toggle-thumb w-6 h-6 bg-verdFosc rounded-full shadow transform translate-x-6"
+						></div>
+					</div>
+				</div>
+
+				<!-- Comments Visualization Dropdown -->
+				<div class="flex items-center justify-between w-32 text-center">
+					<label class="text-md font-medium mr-4">Comments Visualization</label>
+					<select class="bg-verdFosc text-white px-4 py-2 rounded-full">
+						<option>Nomes Amics</option>
+					</select>
+				</div>
+			</section>
+
+			<section class="mb-8">
+				<h2 class="font-bold text-lg text-red-600 mb-4">Danger Zone</h2>
+				<a href="./delete.html">
+					<button
+						class="flex items-center bg-vermell text-white px-4 py-2 rounded-lg w-fit justify-center"
+					>
+						<i class="bi bi-trash-fill mr-2"></i> Delete Account
+					</button>
+				</a>
+			</section>
+
+			<div class="flex justify-center mt-8 mb-6">
+				<a href="./profile.html">
+					<div
+						class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-verdClar flex justify-center items-center"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 44 44"
+							fill="none"
+							class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
+						>
+							<path
+								d="M17.5084 33.0001L7.05835 22.5501L9.67085 19.9376L17.5084 27.7751L34.3292 10.9542L36.9417 13.5667L17.5084 33.0001Z"
+								fill="#FEFAE0"
+							/>
+						</svg>
+					</div>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
