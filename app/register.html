@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/public/style/style.css" />
+  </head>
+  <body class="bg-beix h-screen flex flex-col justify-between font-ubuntu">
+    <!-- Navbar -->
+    <header class="flex justify-between items-center p-4">
+      <!-- Back Arrow -->
+      <a class="text-green-800" href="./login.html">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </a>
+
+      <!-- Icon in the Center -->
+      <div><img src="../public/icons/logo-606C38.png" class="w-14" /></div>
+
+      <!-- Placeholder for right side (optional) -->
+      <div></div>
+    </header>
+
+    <!-- Form Container -->
+
+    <div class="flex flex-col flex-grow mt-40 w-full items-center">
+      <h1 class="text-green-800 text-3xl font-bold mb-14  text-verdClar ">
+        Register!
+      </h1>
+      <div class="ml-20 mr-20 ">
+        <!-- Form -->
+        <form class=" max-w-sm">
+          <!-- Name Input -->
+          <div class="mb-4">
+            <label
+              class="block text-sm font-bold mb-2 text-verdFosc"
+              for="name"
+            >
+              Your Name
+            </label>
+            <input
+              class="border border-verdFosc rounded-lg w-full h-12 py-2 px-3 focus:outline-none text-verdFosc bg-beix"
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <!-- Lastname Input -->
+          <div class="mb-4">
+            <label
+              class="block text-verdFosc text-sm font-bold mb-2"
+              for="lastname"
+            >
+              Your Lastname
+            </label>
+            <input
+              class="border border-verdFosc rounded-lg w-full h-12 py-2 px-3 focus:outline-none text-verdFosc bg-beix"
+              id="lastname"
+              type="text"
+              placeholder="Enter your lastname"
+            />
+          </div>
+        </form>
+
+        <!-- Submit Button -->
+        <a
+          class="w-24 bg-verdClar text-white font-bold p-2 justify-center justify-self-center rounded-lg flex mt-10"
+          href="./register-mobile.html"
+        >
+          <img src="../public/icons/arrow.png" class="w-8" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

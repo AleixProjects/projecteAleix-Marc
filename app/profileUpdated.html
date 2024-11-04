@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Profile</title>
+		<link rel="stylesheet" href="/public/style/style.css" />
+	</head>
+	<body class="bg-beix flex flex-col justify-between font-ubuntu">
+        <header class="flex justify-center items-center p-4 mb-6">
+            <div>
+                <img
+                    src="../public/icons/logo-606C38.png"
+                    alt="Logo"
+                    class="w-10 sm:w-12 md:w-14"
+                />
+            </div>
+        </header>
+
+		<div class="flex flex-col items-center">
+			<div class="flex mb-4 space-x-6 mt-20 md:mt-20 items-center">
+				<img
+					src="../public/icons/shrek.png"
+					class="w-32 h-32 md:w-32 md:h-32 rounded-full"
+				/>
+				<h1 class="text-2xl md:text-3xl font-black">Hi, Marc!</h1>
+			</div>
+
+			<div
+				class="grid justify-center items-center mt-20 font-bold text-center gap-3 md:gap-5 text-lg md:text-xl"
+			>
+				<a href="./editProfile.html"><p>Profile</p></a>
+				<a href="./myVotes.html"><p>My Votes</p></a>
+				<a href="./configuration.html"><p>Configuration</p></a>
+			</div>
+		</div>
+
+		<!-- Notification Banner -->
+		<div
+			class="bg-vermell mt-20 md:mt-32 flex items-center justify-between m-4 h-14 rounded-full p-4"
+		>
+			<p class="text-beix font-bold text-sm md:text-base">
+				We have updated your profile!
+			</p>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="40"
+				height="40"
+				viewBox="0 0 53 53"
+				fill="none"
+				class="w-8 h-8 md:w-10 md:h-10"
+			>
+				<path
+					fill-rule="evenodd"
+					clip-rule="evenodd"
+					d="M26.5 4.41663C14.31 4.41663 4.41663 14.31 4.41663 26.5C4.41663 38.69 14.31 48.5833 26.5 48.5833C38.69 48.5833 48.5833 38.69 48.5833 26.5C48.5833 14.31 38.69 4.41663 26.5 4.41663ZM24.2916 37.5416V33.125H28.7083V37.5416H24.2916ZM24.2916 15.4583V28.7083H28.7083V15.4583H24.2916Z"
+					fill="#FEFAE0"
+				/>
+			</svg>
+		</div>
+
+		<div class="flex justify-center items-center mt-40 md:mt-14">
+			<a
+				class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-verdClar flex justify-center items-center"
+				href="./mainPage.html"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 51 51"
+					fill="none"
+					class="w-32 h-32"
+				>
+					<path
+						fill-rule="evenodd"
+						clip-rule="evenodd"
+						d="M25.5 4.25C13.7487 4.25 4.25 13.7487 4.25 25.5C4.25 37.2513 13.7487 46.75 25.5 46.75C37.2513 46.75 46.75 37.2513 46.75 25.5C46.75 13.7487 37.2513 4.25 25.5 4.25ZM25.5 42.5C16.1288 42.5 8.5 34.8712 8.5 25.5C8.5 16.1288 16.1288 8.5 25.5 8.5C34.8712 8.5 42.5 16.1288 42.5 25.5C42.5 34.8712 34.8712 42.5 25.5 42.5ZM25.5 22.5038L33.1288 14.875L36.125 17.8712L28.4962 25.5L36.125 33.1288L33.1288 36.125L25.5 28.4962L17.8712 36.125L14.875 33.1288L22.5038 25.5L14.875 17.8712L17.8712 14.875L25.5 22.5038Z"
+						fill="white"
+					/>
+				</svg>
+			</a>
+		</div>
+	</body>
+</html>

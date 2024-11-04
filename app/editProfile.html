@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Edit</title>
+		<link rel="stylesheet" href="/public/style/style.css" />
+	</head>
+	<body class="bg-beix flex flex-col justify-between font-ubuntu">
+		<!-- Navbar -->
+		<header class="flex justify-between items-center p-4">
+			<!-- Back Arrow -->
+			<a class="text-green-800" href="./login.html">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="2"
+					stroke="currentColor"
+					class="w-6 h-6"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15 19l-7-7 7-7"
+					/>
+				</svg>
+			</a>
+
+			<!-- Icon in the Center -->
+			<div><img src="../public/icons/logo-606C38.png" class="w-10 sm:w-12 md:w-14" /></div>
+
+			<!-- Placeholder for right side (optional) -->
+			<div></div>
+		</header>
+
+		<!-- Form Container -->
+		<div class="mt-8 sm:mt-14 ml-4 sm:ml-10 text-center sm:text-left">
+			<h1 class="text-2xl sm:text-3xl md:text-4xl font-black">Your Profile</h1>
+			<h4 class="text-lg sm:text-xl font-bold">Select one field you want to edit.</h4>
+		</div>
+
+		<div class="flex flex-col items-center sm:flex-row sm:justify-center mt-6 sm:mt-10 mb-4 space-x-0 sm:space-x-6">
+			<img src="../public/icons/shrek.png" class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full" />
+		</div>
+
+		<div class="flex flex-col items-center">
+			<h4 class="font-bold text-lg mb-3">Marc Penas Garrote</h4>
+			<div class="grid gap-3 text-sm sm:text-base text-center w-4/5 sm:w-3/5 md:w-2/5">
+				<label>Name</label>
+				<input 
+					class="border border-verdFosc rounded-lg w-full h-10 py-2 px-3 focus:outline-none text-verdFosc bg-beix"
+					type="text"
+					placeholder="Marc Penas Garrote"
+				/>
+				<label>Username</label>
+				<input 
+					class="border border-verdFosc rounded-lg w-full h-10 py-2 px-3 focus:outline-none text-verdFosc bg-beix"
+					type="text"
+					placeholder="Marcpg"
+				/>
+				<label>Phone Number</label>
+				<input 
+					class="border border-verdFosc rounded-lg w-full h-10 py-2 px-3 focus:outline-none text-verdFosc bg-beix"
+					type="text"
+					placeholder="640 53 06 76"
+				/>
+				<label>Email</label>
+				<input 
+					class="border border-verdFosc rounded-lg w-full h-10 py-2 px-3 focus:outline-none text-verdFosc bg-beix"
+					type="text"
+					placeholder="example@gmail.com"
+				/>
+			</div>
+			<a href="./changePassword.html" class="mt-6 text-center text-sm text-verdClar font-bold underline">Change Password</a>
+		</div>
+
+		<!-- Save Button -->
+		<div class="flex justify-center mt-8 mb-6">
+			<a href="./profileUpdated.html">
+				<div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-verdClar flex justify-center items-center">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none" class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10">
+						<path d="M17.5084 33.0001L7.05835 22.5501L9.67085 19.9376L17.5084 27.7751L34.3292 10.9542L36.9417 13.5667L17.5084 33.0001Z" fill="#FEFAE0"/>
+					</svg>
+				</div>
+			</a>
+		</div>
+	</body>
+</html>

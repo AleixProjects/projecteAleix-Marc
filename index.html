@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Showcase</title>
+  </head>
+  <body>
+    <div class="container p-6 grid grid-flow-row gap-5">
+      <h1 class="font-sans text-2xl font-bold">Tailwind Showcase</h1>
+      <div class="w-full bg-gray-100 p-3 flex flex-col gap-4">
+        <p class="font-sans text-xl font-bold">Colors and Backgrounds</p>
+        <div class="flex flex-row w-full h-16">
+          <div class="bg-transparent border-2 border-gray-400 basis-1/4"></div>
+          <div class="bg-red-300 border-2 border-red-500 basis-1/4"></div>
+          <div class="bg-yellow-300 border-2 border-yellow-500 basis-1/4"></div>
+          <div class="bg-green-300 border-2 border-green-500 basis-1/4"></div>
+        </div>
+      </div>
+      <div class="w-full bg-gray-100 p-3">
+        <div class="flex flex-row w-full h-16">
+          <div class="bg-gray-100 border-2 border-gray-400 basis-1/4"></div>
+          <div class="bg-gray-200 border-2 border-gray-400 basis-1/4"></div>
+          <div class="bg-gray-300 border-2 border-gray-400 basis-1/4"></div>
+          <div class="bg-gray-400 border-2 border-gray-400 basis-1/4"></div>
+        </div>
+      </div>
+      <div class="w-full bg-gray-100 p-3">
+        <h1 class="font-sans text-2xl font-bold">Text</h1>
+        <p class="text-sm">This is a small text.</p>
+        <p class="text-base">This is a base text.</p>
+        <p class="text-lg">This is a large text.</p>
+        <p class="text-xl">This is an extra large text.</p>
+        <p class="text-3xl">This is a 3x extra large text.</p>
+        <p class="text-4xl">This is a 4x extra large text.</p>
+        <p class="text-5xl">This is a 5x extra large text.</p>
+        <p class="text-8xl">This is a 8x extra large text.</p>
+        <p class="text-9xl">This is a 9x extra large text.</p>
+      </div>
+      <div class="w-full bg-gray-100 p-3">
+        <h1 class="font-sans text-2xl font-bold">Text Decoration</h1>
+        <p class="underline">This is an underlined text</p>
+        <p class="line-through">This is a line-through text</p>
+        <p class="underline line-through">This is an underlined and line-through text</p>
+      </div>
+      <div class="w-full bg-gray-100 p-3">
+        <h1 class="font-sans text-2xl font-bold">Text Alignment</h1>
+        <p class="text-left">This is a left-aligned text</p>
+        <p class="text-center">This is a center-aligned text</p>
+        <p class="text-right">This is a right-aligned text</p>
+      </div>
+      <div class="w-full bg-gray-100 p-3">
+        <h1 class="font-sans text-2xl font-bold">Sizes</h1>
+        <div class="flex flex-row w-full h-16">
+          <div class="bg-gray-100 border-2 border-gray-400 basis-1/4 text-xs text-center content-center">XS</div>
+          <div class="bg-gray-200 border-2 border-gray-400 basis-1/4 text-sm text-center content-center">SM</div>
+          <div class="bg-gray-300 border-2 border-gray-400 basis-1/4 text-base text-center content-center">BASE</div>
+          <div class="bg-gray-400 border-2 border-gray-400 basis-1/4 text-lg text-center content-center">LG</div>
+        </div>
+      </div>
+      <div class="w-full bg-gray-100 p-3">
+        <h1 class="font-sans text-2xl font-bold">Borders</h1>
+        <div class="flex flex-row w-full h-16">
+          <div class="bg-gray-100 border-2 rounded-none border-gray-400 basis-1/4 text-xs"></div>
+          <div class="bg-gray-200 border-2 rounded-sm border-gray-400 basis-1/4 text-sm"></div>
+          <div class="bg-gray-300 border-2 rounded-lg border-gray-400 basis-1/4 text-base"></div>
+          <div class="bg-gray-400 border-2 rounded-full border-gray-400 basis-1/4 text-lg"></div>
+        </div>
+      </div>
+      <div class="w-full bg-gray-100 p-3">
+        <h1 class="font-sans text-2xl font-bold">Padding</h1>
+        <div class="flex flex-col w-full h-16">
+          <div class="bg-gray-200 border-2 border-gray-400 basis-1/4 text-base p-1.5">This div has a padding of 1.5rem on all sides</div>
+          <div class="bg-gray-300 border-2 border-gray-400 basis-1/4 text-base py-3 px-1.5"> This div has a horizontal padding of 1.5rem and a vertical padding of 3rem</div>
+          <div class="bg-gray-400 border-2 border-gray-400 basis-1/4 text-base pt-1 pr-2 pl-4 pb-3">This div has a padding of 1rem on the top, 2rem on the right, 3rem on the bottom,
+            and 4rem on the left</div>
+        </div>
+        <h1 class="font-sans text-2xl font-bold pt-36">Card 1</h1>
+        <div class=" p-3 w-full border-2 border-gray-400 rounded-lg gap-5">
+          <div class="bg-stone-300 rounded-md w-80 h-52 flex justify-center items-center "><p class="text-3xl text-gray-500 font-bold">300 x 200</p></div>
+          <h1 class="font-sans text-xl font-bold pt-4">Card Title</h1>
+          <p>This is a basic card example with an image and no flex</p>
+          <button class=" w-24 p-2 bg-blue-500 rounded-md text-white font-bold">Button</button>
+        </div>
+        <h1 class="font-sans text-2xl font-bold pt-10">Card 2</h1>
+        <div class=" p-3 w-full  border-2 border-gray-400 rounded-lg">
+          <h1 class="font-sans text-xl font-bold ">Card Title</h1>
+          <p>This is a basic card example with an image and no flex</p>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <button class=" w-24 p-2 bg-blue-500 rounded-md text-white font-bold">Button</button>
+        </div>
+        <div class=" p-3 w-full  rounded-lg">
+          <h1 class="font-sans text-xl font-bold ">Buttons</h1>
+          <button class=" w-24 p-2 bg-blue-500 rounded-md text-white font-bold">Button</button>
+          <button class=" w-24 p-2 bg-green-500 rounded-full text-white font-bold">Button</button>
+          <button class=" w-24 p-2 bg-red-500 rounded-lg text-white font-bold">Button</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
