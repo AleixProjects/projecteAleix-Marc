@@ -1,17 +1,22 @@
 import { defineConfig } from "vite";
+import path from "path";
 
 export default defineConfig({
-  root: "./", // Root directory for Vite
-  base: "./", // Use relative paths for assets
+  root: "./", // Directori root de Vite
+  base: "./", // Rutes relatives per als assets
   build: {
-    outDir: "dist", // Output directory for the build
+    outDir: "dist", // Directori de sortida per al build
     rollupOptions: {
-      input: "./index.html", // Entry point for the build
+      input: {
+        main: path.resolve(dirname, "index.html"), // Pàgina principal
+        login: path.resolve(dirname, "app/login.html"),
+        mainPage: path.resolve(__dirname, "app/mainPage.html"),
+      },
     },
   },
   server: {
     watch: {
-      usePolling: true, // Ensures changes are detected in some environments
+      usePolling: true, // Per assegurar que els canvis es detecten en alguns entorns
     },
   },
 });
