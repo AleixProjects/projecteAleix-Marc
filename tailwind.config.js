@@ -1,7 +1,11 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts}", "./app/*"],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        'screen-minus-135': 'calc(100vh - 135px)',
+      },
+    },
     colors: {
       beix: "#fefae0",
       verdClar: "#606c38",
