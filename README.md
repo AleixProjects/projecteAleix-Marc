@@ -3,6 +3,11 @@
 
 ## Introducció
 
+### Idea General.
+- El nostre projecte es basa en fer-ne una aplicació per ajudar en el reaprofitament de zones 'no aprofitades' o 'buides' dins de les diferents poblacions de cada persona.
+- Per aconseguir-ho, hem dissenyat una interfície on apareixeríen en un mapa aquells llocs oberts a sugerencies per ser zones sense aprofitar, i on diferents perfils de veïns d'aquella població podrien aportar idees per al reaprofitament i també donar suport a idees d'altres perfils.
+- Aquestes idees serien transmeses a la població corresponent segons la popularitat de dita proposta, amb l'objectiu de realitzar-ne un canvi positiu a la zona.
+
 ### Plantilles del projecte
 
 #### Els nostres colors:
@@ -36,3 +41,12 @@
 ![alt text](public/src/imageFinalStepsRegister.png)
 ![alt text](public/src/votes.png)
 
+
+#### Display senzill
+- Hem pensat que, com menys informació per pantalla, mes cómode seria per l'usuari. Es per això que hi tenim varies pàgines per a una funcionalitat, com es ara el Register.
+- ![alt text](public/src/imageFinalStepsRegister.png)
+
+#### Responsivitat.
+- La nostra aplicació ha set pensada mes aviat de cara a dispositius mòbils. No obstant, amb la responsivitat hem buscat donar la mateixa experiència tant per pantalles grans com petites, una mica a l'estil Google Maps.
+    - En el cas del perfil, register, login i configuracions hem decidit que una responsivitat centrada que es vaigui adaptant tal i com es veu en mòbil era la millor opció.
+    - De cara a la pàgina principal, hem decidit que colocar la interfaç principal del menú i la barra de cerca a un costat com fent un menú d'opcions, i després adaptar el mapa a la totalitat de la pantalla donaría una millor experiència a l'usuari, una mica mes inspirat en la interfície de Google Maps en pantalla gran.
