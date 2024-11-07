@@ -13,7 +13,10 @@
   >
     <!-- Dark overlay -->
     <div class="absolute inset-0 opacity-50 z-0" id="bgBlack"></div>
-    <a class="fixed top-96 left-44 lg:left-[1300px] lg:top-[560px] z-20" href="./selectedSite.html">
+    <a
+      class="fixed top-96 left-44 lg:left-[1300px] lg:top-[560px] z-20"
+      href="./selectedSite.html"
+    >
       <div
         class="flex justify-center items-center bg-vermell rounded-full w-8 h-8"
       >
@@ -21,64 +24,64 @@
       </div>
     </a>
 
-		<div class="h-screen grid grid-cols-1 content-between relative z-10">
-			<header
-				class="grid grid-cols-4 h-14 md:w-96 mt-10 content-center justify-items-center"
-			>
-				<a href="./profile.html">
-					<img
-						src="../public/icons/shrek.png"
-						class="border rounded-full w-12 h-12"
-						id="myImgProfile"
-					/>
-				</a>
+    <div class="h-screen grid grid-cols-1 content-between relative z-10">
+      <header
+        class="grid grid-cols-4 h-14 md:w-96 mt-10 content-center justify-items-center"
+      >
+        <a href="./profile.html">
+          <img
+            src="../public/icons/shrek.png"
+            class="border rounded-full w-12 h-12"
+            id="myImgProfile"
+          />
+        </a>
 
-				<textarea
-					rows="1"
-					class="min-w-72 flex bg-verdClar col-span-3 rounded-full items-center text-beix p-3 placeholder-beix focus:border-beix relative z-20"
-					style="resize: none"
-					placeholder="Search for site"
-					id="myTextarea"
-				></textarea>
-			</header>
-			<footer>
-				<div
-					class="relative w-full md:w-96 h-20 bg-verdClar rounded-t-3xl flex flex-row justify-center"
-				>
-					<div
-						class="bg-verdClar w-20 h-20 rounded-t-3xl absolute -top-5 flex justify-center items-center"
-					>
-						<img
-							class="w-16 h-autobg-beix"
-							src="../public/icons/logo-fefae0.png"
-							alt="Envelope Icon"
-						/>
-					</div>
-				</div>
-			</footer>
-		</div>
+        <textarea
+          rows="1"
+          class="min-w-72 flex bg-verdClar col-span-3 rounded-full items-center text-beix p-3 placeholder-beix focus:border-beix relative z-20"
+          style="resize: none"
+          placeholder="Search for site"
+          id="myTextarea"
+        ></textarea>
+      </header>
+      <footer>
+        <div
+          class="relative w-full md:w-96 h-20 bg-verdClar rounded-t-3xl flex flex-row justify-center"
+        >
+          <div
+            class="bg-verdClar w-20 h-20 rounded-t-3xl absolute -top-5 flex justify-center items-center"
+          >
+            <img
+              class="w-16 h-autobg-beix"
+              src="../public/icons/logo-fefae0.png"
+              alt="Envelope Icon"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
 
-		<script>
-			const textarea = document.getElementById('myTextarea')
-			const imgProfile = document.getElementById('myImgProfile')
-			const bg = document.getElementById('bgBlack')
-			textarea.addEventListener('focus', function () {
-				textarea.classList.remove('bg-verdClar')
-				textarea.classList.remove('text-beix')
-				textarea.classList.add('bg-beix')
-				textarea.classList.add('text-verdFosc')
-				textarea.classList.add('h-16')
-				textarea.classList.add('pt-5')
-				imgProfile.classList.add('w-10')
-				imgProfile.classList.add('h-10')
-				imgProfile.classList.add('m-3')
-				bg.classList.add('bg-black')
-			})
-			textarea.addEventListener('blur', function () {
-				textarea.classList.add('border')
-				textarea.classList.add('border-verdClar')
-				bg.classList.remove('bg-black')
-			})
-		</script>
-	</body>
+    <script>
+      const textarea = document.getElementById("myTextarea");
+      const imgProfile = document.getElementById("myImgProfile");
+      const bg = document.getElementById("bgBlack");
+      textarea.addEventListener("focus", function () {
+        textarea.classList.remove("bg-verdClar");
+        textarea.classList.remove("text-beix");
+        textarea.classList.add("bg-beix");
+        textarea.classList.add("text-verdFosc");
+        textarea.classList.add("h-16");
+        textarea.classList.add("pt-5");
+        imgProfile.classList.add("w-10");
+        imgProfile.classList.add("h-10");
+        imgProfile.classList.add("m-3");
+        bg.classList.add("bg-black");
+      });
+      textarea.addEventListener("blur", function () {
+        textarea.classList.add("border");
+        textarea.classList.add("border-verdClar");
+        bg.classList.remove("bg-black");
+      });
+    </script>
+  </body>
 </html>
