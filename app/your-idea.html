@@ -8,12 +8,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body
-    class="font-ubuntu bg-cover bg-no-repeat relative bg-[url('../public/bg/map.png')] md:bg-[url('../public/bg/mapmd.png')]"
+    class="font-ubuntu bg-cover bg-no-repeat relative bg-[url('/bg/map.png')] md:bg-[url('/bg/mapmd.png')]"
     id="body"
   >
     <!-- Dark overlay -->
     <div class="absolute inset-0 opacity-50 z-0" id="bgBlack"></div>
-    <a class="fixed top-96 left-44 lg:left-[1300px] lg:top-[560px] z-20" href="./selectedSite.html">
+    <a
+      class="fixed top-96 left-44 lg:left-[1300px] lg:top-[560px] z-20"
+      href="./selectedSite.html"
+    >
       <div
         class="flex justify-center items-center bg-vermell rounded-full w-8 h-8"
       >
@@ -45,38 +48,75 @@
         class="mt-10 h-screen-minus-135 w-full md:w-96 bg-beix border rounded-t-3xl border-verdClar"
       >
         <div>
-            <div class="flex flex-col w-full md:w-96 h-screen">
-                <hr class="bg-verdClar mt-3 w-40 h-1.5 self-center rounded-lg">
-                <div class="pt-10 pl-5 w-screen md:w-96 ">
-                    <h1 class="text-verdFosc text-3xl font-black">Crta. Barcelona, 39-37</h1>
-                    <p class="pt-2 text-verdFosc font-extralight">42.192769503009075, 2.193246171025068</p>
-                    <div class="pt-5">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none" >
-                        <path d="M15 27.125L13.1875 25.4458C11.0833 23.4868 9.34375 21.7969 7.96875 20.376C6.59375 18.9552 5.5 17.6851 4.6875 16.5656C3.875 15.4246 3.30208 14.3806 2.96875 13.4333C2.65625 12.4861 2.5 11.5174 2.5 10.5271C2.5 8.50347 3.15625 6.81354 4.46875 5.45729C5.78125 4.10104 7.41667 3.42291 9.375 3.42291C10.4583 3.42291 11.4896 3.65972 12.4688 4.13333C13.4479 4.60694 14.2917 5.2743 15 6.13541C15.7083 5.2743 16.5521 4.60694 17.5313 4.13333C18.5104 3.65972 19.5417 3.42291 20.625 3.42291C22.5833 3.42291 24.2188 4.10104 25.5313 5.45729C26.8438 6.81354 27.5 8.50347 27.5 10.5271C27.5 11.5174 27.3333 12.4861 27 13.4333C26.6875 14.3806 26.125 15.4246 25.3125 16.5656C24.5 17.6851 23.4063 18.9552 22.0313 20.376C20.6563 21.7969 18.9167 23.4868 16.8125 25.4458L15 27.125ZM15 23.6375C17 21.7861 18.6458 20.2038 19.9375 18.8906C21.2292 17.5559 22.25 16.4042 23 15.4354C23.75 14.4451 24.2708 13.5733 24.5625 12.8198C24.8542 12.0448 25 11.2806 25 10.5271C25 9.23541 24.5833 8.15902 23.75 7.29791C22.9167 6.4368 21.875 6.00625 20.625 6.00625C19.6458 6.00625 18.7396 6.29687 17.9063 6.87812C17.0729 7.43784 16.5 8.15902 16.1875 9.04166H13.8125C13.5 8.15902 12.9271 7.43784 12.0938 6.87812C11.2604 6.29687 10.3542 6.00625 9.375 6.00625C8.125 6.00625 7.08333 6.4368 6.25 7.29791C5.41667 8.15902 5 9.23541 5 10.5271C5 11.2806 5.14583 12.0448 5.4375 12.8198C5.72917 13.5733 6.25 14.4451 7 15.4354C7.75 16.4042 8.77083 17.5559 10.0625 18.8906C11.3542 20.2038 13 21.7861 15 23.6375Z" fill="#1D1B20"/>
+          <div class="flex flex-col w-full md:w-96 h-screen">
+            <hr class="bg-verdClar mt-3 w-40 h-1.5 self-center rounded-lg" />
+            <div class="pt-10 pl-5 w-screen md:w-96">
+              <h1 class="text-verdFosc text-3xl font-black">
+                Crta. Barcelona, 39-37
+              </h1>
+              <p class="pt-2 text-verdFosc font-extralight">
+                42.192769503009075, 2.193246171025068
+              </p>
+              <div class="pt-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="31"
+                  viewBox="0 0 30 31"
+                  fill="none"
+                >
+                  <path
+                    d="M15 27.125L13.1875 25.4458C11.0833 23.4868 9.34375 21.7969 7.96875 20.376C6.59375 18.9552 5.5 17.6851 4.6875 16.5656C3.875 15.4246 3.30208 14.3806 2.96875 13.4333C2.65625 12.4861 2.5 11.5174 2.5 10.5271C2.5 8.50347 3.15625 6.81354 4.46875 5.45729C5.78125 4.10104 7.41667 3.42291 9.375 3.42291C10.4583 3.42291 11.4896 3.65972 12.4688 4.13333C13.4479 4.60694 14.2917 5.2743 15 6.13541C15.7083 5.2743 16.5521 4.60694 17.5313 4.13333C18.5104 3.65972 19.5417 3.42291 20.625 3.42291C22.5833 3.42291 24.2188 4.10104 25.5313 5.45729C26.8438 6.81354 27.5 8.50347 27.5 10.5271C27.5 11.5174 27.3333 12.4861 27 13.4333C26.6875 14.3806 26.125 15.4246 25.3125 16.5656C24.5 17.6851 23.4063 18.9552 22.0313 20.376C20.6563 21.7969 18.9167 23.4868 16.8125 25.4458L15 27.125ZM15 23.6375C17 21.7861 18.6458 20.2038 19.9375 18.8906C21.2292 17.5559 22.25 16.4042 23 15.4354C23.75 14.4451 24.2708 13.5733 24.5625 12.8198C24.8542 12.0448 25 11.2806 25 10.5271C25 9.23541 24.5833 8.15902 23.75 7.29791C22.9167 6.4368 21.875 6.00625 20.625 6.00625C19.6458 6.00625 18.7396 6.29687 17.9063 6.87812C17.0729 7.43784 16.5 8.15902 16.1875 9.04166H13.8125C13.5 8.15902 12.9271 7.43784 12.0938 6.87812C11.2604 6.29687 10.3542 6.00625 9.375 6.00625C8.125 6.00625 7.08333 6.4368 6.25 7.29791C5.41667 8.15902 5 9.23541 5 10.5271C5 11.2806 5.14583 12.0448 5.4375 12.8198C5.72917 13.5733 6.25 14.4451 7 15.4354C7.75 16.4042 8.77083 17.5559 10.0625 18.8906C11.3542 20.2038 13 21.7861 15 23.6375Z"
+                    fill="#1D1B20"
+                  />
+                </svg>
+              </div>
+
+              <div
+                class="ml-5 mr-10 mt-14 h-auto w-auto border border-verdClar rounded-3xl overflow-hidden"
+              >
+                <a href="selectedSite.html"
+                  ><button
+                    class="m-5 w-auto h-10 px-3 bg-verdClar text-beix rounded-md"
+                  >
+                    Check Out Other Ideas!
+                  </button></a
+                >
+                <div class="px-5 pb-5">
+                  <div
+                    class="bg-blanc w-full h-full border border-verdFosc rounded-lg"
+                  >
+                    <div
+                      class="flex flex-row justify-between align-middle pt-4 px-4"
+                    >
+                      <h1 class="font-semibold text-lg">Title</h1>
+                    </div>
+                    <div class="px-4 py-4">
+                      <textarea
+                        class="text-sm w-full"
+                        placeholder="Explain your proposal here!"
+                      ></textarea>
+                    </div>
+                    <div class="flex justify-end p-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="38"
+                        height="43"
+                        viewBox="0 0 38 43"
+                        fill="none"
+                      >
+                        <rect width="38" height="43" fill="white" />
+                        <path
+                          d="M4.75 35.8333V7.16666L34.8333 21.5L4.75 35.8333ZM7.91667 30.4583L26.6792 21.5L7.91667 12.5417V18.8125L17.4167 21.5L7.91667 24.1875V30.4583ZM7.91667 30.4583V21.5V12.5417V18.8125V24.1875V30.4583Z"
+                          fill="#1D1B20"
+                        />
                       </svg>
                     </div>
-            
-                    <div class="ml-5 mr-10 mt-14 h-auto w-auto border border-verdClar  rounded-3xl overflow-hidden">
-                      <a href="selectedSite.html"><button class="m-5 w-auto h-10 px-3 bg-verdClar text-beix rounded-md">Check Out Other Ideas!</button></a>
-                        <div class="px-5 pb-5">
-                          <div class="bg-blanc w-full h-full border border-verdFosc rounded-lg">
-                            <div class="flex flex-row justify-between align-middle pt-4 px-4">
-                              <h1 class="font-semibold text-lg">Title</h1>
-                            </div>
-                            <div class="px-4 py-4">
-                              <textarea class="text-sm  w-full" placeholder="Explain your proposal here!"></textarea>
-                            </div>
-                            <div class="flex justify-end p-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="43" viewBox="0 0 38 43" fill="none">
-                                    <rect width="38" height="43" fill="white"/>
-                                    <path d="M4.75 35.8333V7.16666L34.8333 21.5L4.75 35.8333ZM7.91667 30.4583L26.6792 21.5L7.91667 12.5417V18.8125L17.4167 21.5L7.91667 24.1875V30.4583ZM7.91667 30.4583V21.5V12.5417V18.8125V24.1875V30.4583Z" fill="#1D1B20"/>
-                                  </svg>
-                            </div>
-                          </div>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
         </div>
       </footer>
     </div>
@@ -105,16 +145,16 @@
     </script>
 
     <script>
-        const items = document.querySelectorAll('.carousel-item');
-        let currentItem = 0;
+      const items = document.querySelectorAll(".carousel-item");
+      let currentItem = 0;
 
-        function showNextItem() {
-        items[currentItem].classList.remove('active');
+      function showNextItem() {
+        items[currentItem].classList.remove("active");
         currentItem = (currentItem + 1) % items.length;
-        items[currentItem].classList.add('active');
-        }
+        items[currentItem].classList.add("active");
+      }
 
-        setInterval(showNextItem, 3000); // Change image every 3 seconds
+      setInterval(showNextItem, 3000); // Change image every 3 seconds
     </script>
   </body>
 </html>
